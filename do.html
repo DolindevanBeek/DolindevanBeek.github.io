@@ -1,0 +1,135 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/do.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+    <!--
+        
+        This is an example of step element being scaled.
+        
+        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
+        element will be 4 times larger than the others.
+        From presentation and transitions point of view it means, that it will have to be scaled
+        down (4 times) to make it back to its correct size.
+        
+    -->
+
+    <div id="title" class="step box" data-x="2000" data-y="0" data-scale="4">
+    <h1>Dolinde (Do)</h1>
+    </div>
+
+    <div class="vr one" data-scale="4"></div>
+    <div class="vr two" data-scale="4"></div>
+    <div class="vr three" data-scale="4"></div>
+    <div class="vr four" data-scale="4"></div>
+    <div class="hr one" data-scale="4"></div>
+    <div class="hr two" data-scale="4"></div>
+
+    <div id="ux" class="step box" data-x="2000" data-y="2000" data-scale="4">
+    <h2>User Experience (UX) Designer</h2>
+    </div>
+
+        <div id="like" class="step" data-x="-1000" data-y="2000" data-z="-2000" data-scale="2">
+        <h3>I like</h3>
+        </div>
+
+        <div id="flowcharts" class="step" data-x="-500" data-y="2000" data-z="-2000" data-scale="2">
+        <h3>Flow charts</h3>
+        <img src="images/horse.jpg"/>
+        </div>
+
+        <div id="wireframes" class="step" data-x="500" data-y="2000" data-z="-2000" data-scale="2">
+        <h3>Wireframes</h3>
+        <img src="images/wireframe.png"/>
+        </div>
+
+        <div id="usertesting" class="step" data-x="2000" data-y="2000" data-z="-2000" data-scale="2">
+        <h3>User testing</h3>
+        <img src="images/tests.jpg"/>
+        </div>
+
+        <div id="psychology" class="step" data-x="3000" data-y="2000" data-z="-2000" data-scale="2">
+        <h3>Psychology</h3>
+        <img src="images/horse.jpg"/>
+        </div>
+
+        <div id="coding" class="step" data-x="4000" data-y="2000" data-z="-2000" data-scale="2">
+        <h3>Code</h3>
+        <img src="images/css.jpg"/>
+        </div>
+
+    <div id="nerd" class="step box" data-x="0" data-y="4000" data-scale="4">
+    <h3>Nerd</h3>
+    </div>
+
+    <div id="code" class="step" data-x="0" data-y="4000" data-z="-2000" data-scale="2">
+        <img src="images/narnia.png"/>
+        <img width="300px" src="images/comphistory.jpg"/>
+        <img width="300px" src="images/who.jpg"/>
+    </div>
+
+    <div id="designer" class="step box" data-x="4000" data-y="4000" data-scale="4">
+    <h3>Designer</h3>
+    </div>
+
+    <div id="design" class="step" data-x="4000" data-y="4000" data-z="-2000" data-scale="2">
+        <img width="300px" src="images/design.jpg"/>
+        <img width="300px" src="images/skeumorphism.jpg" />
+        <img src="images/smokeyfeet.jpg"/>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+    <div id="dancer" class="step box" data-x="7000" data-y="2000" data-scale="4">
+    <h2>Dancer</h2>
+    </div>
+
+    <div id="clip" class="step box" data-x="7000" data-y="2000" data-z="-2000" data-scale="4">
+        <a href="https://youtu.be/NlTVJ9fOmro">https://youtu.be/NlTVJ9fOmro</a>
+    </div>
+
+    <div id="music" class="step box" data-x="10500" data-y="2000" data-scale="3">
+    <h2>Music</h2>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
+
