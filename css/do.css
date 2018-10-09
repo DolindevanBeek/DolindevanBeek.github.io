@@ -253,14 +253,18 @@ a:focus {
 
 h1 {font-size: 140px;}
 h2 {font-size: 100px;}
-h3 {font-size: 50px;}
-h4 {font-size: 30px;}
+h3 {font-size: 50px; line-height: 50px; margin-bottom: 50px;}
+h4 {font-size: 30px; line-height: 30px;}
 
 body
 {
     background: white;
     background-image: url('../images/do_background.jpg');*/
     background-size: contain;
+}
+
+.step img {
+    max-height: 450px;
 }
 
 .box
