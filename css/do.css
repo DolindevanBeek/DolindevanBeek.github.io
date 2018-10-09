@@ -197,6 +197,7 @@ a:focus {
 }
 
 .impress-enabled .step.active { opacity: 1 }
+.impress-enabled .step:not(.active) {opacity: 0;}
 
 /*
     These 'slide' step styles were heavily inspired by HTML5 Slides:
@@ -252,12 +253,14 @@ a:focus {
 
 h1 {font-size: 140px;}
 h2 {font-size: 100px;}
-h3 {font-size: 80px;}
+h3 {font-size: 50px;}
+h4 {font-size: 30px;}
 
 body
 {
-    background-image: url('../images/hand-made-vector-patterns-circle.jpg');
-    background-size: cover;
+    background: white;
+    background-image: url('../images/do_background.jpg');*/
+    background-size: contain;
 }
 
 .box
@@ -325,8 +328,8 @@ body
     top: 3180px;
 }
 
-#title {
-    
+.step {
+    padding-left: 100px;
 }
 
 #title h1 {
@@ -345,10 +348,10 @@ body
 
 #flowcharts h3
 {
-    transform: rotate(90deg);
+    /*transform: rotate(90deg);
     position: absolute;
     top: 180px;
-    left: 240px;
+    left: 240px;*/
 }
 
 #code img
